@@ -1,33 +1,41 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import { BrowserRouter as Router, Route, Routes,Navigate   } from "react-router-dom"
+import Home from './Component/Home'
+import Login from './Component/Login'
+import SignUp from './Component/SignUp'
+import Dashboard from './Component/Dashboard'
+import Layout from './Component/Layout'
+import Products from './Component/Products'
+import AddProduct from './Component/AddProduct'
+import EditProduct from './Component/EditProduct'
+import Purchase from './Component/Purchase'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+<Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/addProduct" element={<AddProduct />} />
+        <Route path="/editProduct/:id" element={<EditProduct />} />
+        
+      {/* Layout route with nested routes */}
+      <Route path="/*" element={<Layout/>}>
+          <Route index element={<Navigate to="dashboard" />} /> {/* Redirect to dashboard */}
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="products" element={<Products/>} />
+          <Route path="purchase" element={<Purchase/>} />
+          {/* Add more nested routes here */}
+        </Route>
+      </Routes>
+    </Router>
     </>
   )
 }

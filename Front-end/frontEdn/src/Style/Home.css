@@ -1,0 +1,303 @@
+.landingpage {
+    background-image: url('/homeE.jpeg');
+    background-position: right center; /* Position the background image on the right side */
+    background-size: cover; /* Adjust the image size to cover the entire container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 500px; /* Adjust padding as needed */
+    position: relative; /* Ensure that child elements are positioned correctly */
+    -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+  @-webkit-keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  @keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  .alert {
+    position: fixed;
+    top: 10;
+    left: 0;
+    width: 100%;
+    background-color: #ffcccb;
+    color: #721c24;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+  }
+  
+  
+  .headingText h1{
+    
+    font-size: 70px;
+    color: antiquewhite;
+    font-style: italic;
+    padding-left: 130px;
+    background-clip: text;
+    color: transparent; /* Set text color to transparent */
+    font-family: 'Quattrocento';
+    font-size: 75px;
+   
+    background-image: url('/illus.jpeg'); /* Set the background image */
+    background-size: cover; /* Adjust background image size */
+    background-position: center; /* Center the background image */
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+  /* CSS */
+  .link-style {
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .start {
+    /* Add your button styles here */
+    background-color: #007bff; /* Example background color */
+    color: white; /* Example text color */
+    border: none; /* Example border */
+    padding: 10px 20px; /* Example padding */
+    border-radius: 5px; /* Example border radius */
+  
+  }
+  
+  .start:hover {
+    background-color: #0056b3; /* Example hover background color */
+  }
+  
+  
+  
+  
+  .headingText {
+    position: absolute; /* Position the text relative to the .landingpage container */
+    top:150px; /* Adjust as needed to align with the top of the container */
+    left: 100px; /* Align the text to the left edge of the container */
+  
+    padding-right: 900px;
+    font-family: 'FTrirong';
+  
+  
+    font-style: italic;
+    padding-left: 100px;
+    font-family: 'Courgette';
+    color: transparent; /* Set text color to transparent */
+    font-family: 'Quattrocento';
+    background-size: cover; /* Adjust background image size */
+    background-position: center; /* Center the background image */
+   font-weight: bolder;
+   font-size: 30px;
+    background-clip: text;
+  
+    background-color: #0056b3;
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+              animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  
+  
+  }
+  
+  .hello{
+    font-family: 'FTrirong';
+    font-style: italic;
+    font-family: 'Courgette';
+    color: transparent; /* Set text color to transparent */
+    font-family: 'Quattrocento';
+    background-size: cover; /* Adjust background image size */
+    background-position: center; /* Center the background image */
+   font-weight: bolder;
+   font-size: 50px;
+    background-clip: text;
+  
+    background-color: #0056b3;
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+              animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  
+  
+  }
+  @-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  
+  /* styles.css */
+  
+    /* styles.css */
+  .card-img1 {
+      width:100%; /* Adjust the width as needed */
+      height: 100%;
+      
+      /* background-color: #dfefff; */
+      /* Center the image horizontally
+       */
+    }
+    .text-img1{
+      /* margin-bottom: 200px; */
+     
+     
+    }
+    
+    .headingTextt{   
+    font-size: 20px;
+    color: antiquewhite;
+    font-style: italic;
+    padding-left: 330px;
+    background-clip: text;
+    color: transparent; /* Set text color to transparent */
+    font-family: 'Quattrocento';
+    font-size: 50px;
+   background-color: #0056b3;
+   
+    background-size: cover; /* Adjust background image size */
+    background-position: center; /* Center the background image */
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+    
+  .subContent{
+    font-family: 'FTrirong';
+   padding: 10px;
+    font-family: 'Courgette';
+    color: transparent; /* Set text color to transparent */
+    font-family: 'Quattrocento';
+    background-size: cover; /* Adjust background image size */
+    background-position: center; /* Center the background image */
+   font-weight: bold;
+   font-size: 20px;
+    background-clip: text;
+    line-height: 1.5;
+  
+    background-color: #0056b3;
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+              animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+  
+  }
+    
+  
+    .landing-img {
+      width: 100%; /* Adjust the width as needed */
+      height: auto;
+     
+     
+    /* Center the image horizontally */
+    border-radius: 10px;
+
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  
+    
+    
+    }
+    /* styles.css */
+  .center-content {
+    
+      justify-content: center;
+      align-items: center;
+     padding-bottom: 130px;
+   
+    
+    }
+    

@@ -1,11 +1,12 @@
 import express from 'express';
-import bcrypt from 'bcrypt';
+import { getAllUserDetail, loginUser, signUpUser } from '../controller/user.js';
+import authenticateUser from '../middleware/authorizationMiddleware.js';
 
 const router = express.Router()
 
-router.route('/signUp').post()
-router.route('/login').post()
-router.route('/getAllUserDetail').get()
+router.route('/signUp').post(signUpUser)
+router.route('/login').post(loginUser)
+router.route('/getAllUserDetail').get(authenticateUser,getAllUserDetail)
 
 
 export const userRouter = router;
